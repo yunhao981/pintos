@@ -70,7 +70,7 @@ static void locate_block_devices (void);
 static void locate_block_device (enum block_type, const char *name);
 #endif
 
-int main (void) NO_RETURN;
+//int main (void) NO_RETURN;
 
 /* Pintos main program. */
 int
@@ -95,6 +95,7 @@ main (void)
           init_ram_pages * PGSIZE / 1024);
 
   /* Initialize memory system. */
+
   palloc_init (user_page_limit);
   malloc_init ();
   paging_init ();
